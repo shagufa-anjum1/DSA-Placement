@@ -1,3 +1,5 @@
+import java.util.LinkedList;
+
 public class Lec9_LinkedList {
     public static class node{
         int data;
@@ -9,7 +11,12 @@ public class Lec9_LinkedList {
 
         }
     }
+    public static node head;
+    public static node tail;
+
     public static void main(String[] args){
+        LinkedList ll = new LinkedList();
+
 
     }
 }
