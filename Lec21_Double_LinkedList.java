@@ -28,6 +28,23 @@ public class Lec21_Double_LinkedList {
         head.prev = newNode;
         head = newNode;
     }
+    public int removeFirst(){
+        if(head == null){
+            System.out.println("double LinkedList is empty");
+            return Integer.MIN_VALUE;
+        }
+        if(size == 1){
+            int val = head.data;
+            head = tail = null;
+            size--;
+            return val;
+        }
+        int val = head.data;
+        head = head.next;
+        head.prev = null;
+        size--;
+        return val;
+    }
     public  void print(){
         node temp = head;
         while (temp != null){
@@ -43,6 +60,12 @@ public class Lec21_Double_LinkedList {
         dll.addFirst(3);
         dll.addFirst(2);
         dll.addFirst(1);
+        System.out.println(dll);
+        System.out.println(dll.size());
+        dll.removeFirst();
+        System.out.println(dll);
+        System.out.println(dll.size());
+        dll.removeFirst();
         System.out.println(dll);
         System.out.println(dll.size());
 
