@@ -9,10 +9,10 @@ public class Lec28_stockSpan_Stack {
 
        for(int i=1; i<stocks.length; i++){
            int currPrice = stocks[i];
-
-           while (!s.isEmpty() && currPrice > stocks.[s.peek()]){
-               s.pop();
-           }
+//
+//           while (!s.isEmpty() && currPrice > stocks.[s.peek()]){
+//               s.pop();
+//           }
            if(s.isEmpty()){
                span[i] = i+1;
            }else {
@@ -26,10 +26,10 @@ public class Lec28_stockSpan_Stack {
    public static void main(String[] args){
        int stacks[] = {100, 80, 60, 70, 60, 85, 100};
        int span[] ;
-       stackSpan(stacks, span);
+       //stackSpan(stacks, span);
 
-       for(int i=0; i<span.length; i++){
-           System.out.println(span[i]+" ");
-       }
+//       for(int i=0; i<span.length; i++){
+//           System.out.println(span[i]+" ");
+//       }
    }
 }
