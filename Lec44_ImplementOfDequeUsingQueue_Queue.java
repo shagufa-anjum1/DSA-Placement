@@ -25,7 +25,7 @@ public class Lec44_ImplementOfDequeUsingQueue_Queue {
        q.add(2);
        q.add(3);
 
-        System.out.println("Pecck : "+q.peek());
+        System.out.println("Peek : "+q.peek());
         System.out.println(q.remove());
         System.out.println(q.remove());
         System.out.println(q.remove());
