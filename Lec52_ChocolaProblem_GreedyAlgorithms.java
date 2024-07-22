@@ -37,7 +37,7 @@ public class Lec52_ChocolaProblem_GreedyAlgorithms {
         }
         while (ver < costVertical.length){
             cost += (costVertical[ver]*horiPice);
-            verPice++;
+             verPice++;
             ver++;
         }
 
