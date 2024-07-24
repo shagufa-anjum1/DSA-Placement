@@ -52,6 +52,22 @@ public class Lec65_FindCommonAncestor_BinaryTree {
         return lca;
 
     }
+    public static Node lca2(Node root, int n1, int n2){
+        if(root == null || root.data == n1 || root.data == n2){
+            return root;
+        }
+        Node lcaLeft = lca2(root.left, n1, n2);
+        Node lcaRight = lca2(root.right, n1, n2);
+        // lcaLeft = value lcaRight = null
+        if(lcaRight == null){
+            return lcaLeft;
+        }
+        if (lcaLeft == null){
+            return lcaRight;
+        }
+        return root;
+
+    }
 
     public static void main(String[] args) {
         /*
@@ -70,9 +86,10 @@ public class Lec65_FindCommonAncestor_BinaryTree {
         root.left.right = new Node(5);
         root.right.left = new Node(6);
         root.right.right = new Node(7);
-        int n1 = 2;
-        int n2 = 4;
-        System.out.println(lca(root, n1, n2).data);
+        int n1 = 4;
+        int n2 = 6;
+       // System.out.println(lca(root, n1, n2).data);
+        System.out.println(lca2(root, n1, n2).data);
 
 
     }
