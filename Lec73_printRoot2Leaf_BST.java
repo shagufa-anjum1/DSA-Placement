@@ -38,7 +38,7 @@ public class Lec73_printRoot2Leaf_BST {
             System.out.print(path.get(i)+" ->");
         }
          System.out.println("Null");
-     }
+    }
     public static void printRoot2Leaf(Node root, ArrayList<Integer> path){
         if(root == null){
             return;
