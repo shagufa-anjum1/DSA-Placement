@@ -15,7 +15,7 @@ public class Lec76_SortedBalanceBST_BST {
         if(root == null){
             return;
         }
-        System.out.print(root.data);
+        System.out.print(root.data+" ");
         preOrder(root.left);
         preOrder(root.right);
     }
@@ -29,8 +29,10 @@ public class Lec76_SortedBalanceBST_BST {
         root.right = createBST(arr, mid+1, end );
         return root;
     }
-    public static void main(String args){
+    public static void main(String[] args){
         int arr[]  = {3, 5, 6, 8, 10, 11 };
 
+        Node root = createBST(arr, 0, arr.length-1);
+        preOrder(root);
     }
 }
