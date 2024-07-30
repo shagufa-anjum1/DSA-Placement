@@ -30,7 +30,7 @@ public class Lec76_SortedBalanceBST_BST {
         return root;
     }
     public static void main(String[] args){
-        int arr[]  = {3, 5, 6, 8, 10, 11 };
+        int arr[]  = {3, 5, 6, 8, 10, 11, 12 };
 
         Node root = createBST(arr, 0, arr.length-1);
         preOrder(root);
