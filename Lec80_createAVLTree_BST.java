@@ -63,7 +63,7 @@ public class Lec80_createAVLTree_BST {
         x.right = y;
         y.left = T2;
 
-        // Updata heights
+        // Update heights
         y.height = max(height(y.left), height(y.right)) + 1;
         x.height = max(height(x.left), height(x.right)) + 1;
 
@@ -83,7 +83,7 @@ public class Lec80_createAVLTree_BST {
             return root;   // duplicate key not allowed
         }
 
-        // Updata root height
+        // Update root height
         root.height = 1 + Math.max(height(root.left), height(root.right));
 
         // get root's balance factor
