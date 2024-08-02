@@ -11,6 +11,7 @@ public class Lec82_PQforObjects_Heaps {
         }
         @Override
         public int compareTo(Student s2){
+
             return this.rank - s2.rank;
         }
 
