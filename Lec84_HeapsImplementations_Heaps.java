@@ -25,6 +25,7 @@ public class Lec84_HeapsImplementations_Heaps {
       }
       // get Min in Heap
       public int peek(){
+
           return arr.get(0);
       }
       private  void heapify(int i){
@@ -51,6 +52,7 @@ public class Lec84_HeapsImplementations_Heaps {
       }
 
       public boolean isEmpty(){
+
           return arr.size() == 0;
       }
 
@@ -60,7 +62,7 @@ public class Lec84_HeapsImplementations_Heaps {
 
           // step1-swap first & last
           int temp = arr.get(0);
-          arr.set(0, arr.size()-1);
+          arr.set(0, arr.get(arr.size()-1));
           arr.set(arr.size()-1, temp);
 
           // step2 - delete last
@@ -72,15 +74,15 @@ public class Lec84_HeapsImplementations_Heaps {
       }
   }
     public static void main(String[] args){
-      Heap h = new Heap();
-      h.add(3);
-      h.add(4);
-      h.add(1);
-      h.add(5);
+      Heap pq = new Heap();
+      pq.add(3);
+      pq.add(4);
+      pq.add(1);
+      pq.add(5);
 
-      while (!h.isEmpty()){
-          System.out.println(h.peek());
-          h.remove();
+      while (!pq.isEmpty()){
+          System.out.println(pq.peek());
+          pq.remove();
       }
 
     }
