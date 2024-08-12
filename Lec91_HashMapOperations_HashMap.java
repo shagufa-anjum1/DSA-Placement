@@ -31,5 +31,17 @@ public class Lec91_HashMapOperations_HashMap {
         System.out.println(hm.remove("US"));
         System.out.println(hm);
 
+
+        //Size
+        System.out.println(hm.size());
+
+        // IS Empty
+        System.out.println(hm.isEmpty());
+
+        // clear function
+        hm.clear();
+        System.out.println(hm);
+        System.out.println(hm.isEmpty());
+
     }
 }
