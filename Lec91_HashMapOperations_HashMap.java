@@ -12,5 +12,11 @@ public class Lec91_HashMapOperations_HashMap {
         hm.put("America", 70);
 
         System.out.println(hm);
+
+        // get - o(1)
+        int population = hm.get("India");
+        System.out.println(population);
+
+        System.out.println(hm.get("US"));
     }
 }
