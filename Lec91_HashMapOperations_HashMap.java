@@ -22,5 +22,14 @@ public class Lec91_HashMapOperations_HashMap {
         // ContainsKey-0(1)
         System.out.println(hm.containsKey("India")); // Ture
         System.out.println(hm.containsKey("US")); // False
+
+        //Remove Operations-o(1)
+        int india = hm.remove("India");
+        System.out.println(india);
+        System.out.println(hm);
+
+        System.out.println(hm.remove("US"));
+        System.out.println(hm);
+
     }
 }
