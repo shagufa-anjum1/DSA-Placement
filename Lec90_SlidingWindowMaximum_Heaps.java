@@ -18,7 +18,7 @@ public class Lec90_SlidingWindowMaximum_Heaps {
         }
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args){ //o(nlogn)
         int arr[] = {1, 3, -1, -3, 5, 3, 6, 7};
         int k = 3;
         int result[] = new int[arr.length-k+1]; // n-k+1
