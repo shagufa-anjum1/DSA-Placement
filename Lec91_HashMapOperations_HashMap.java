@@ -18,5 +18,9 @@ public class Lec91_HashMapOperations_HashMap {
         System.out.println(population);
 
         System.out.println(hm.get("US"));
+
+        // ContainsKey-0(1)
+        System.out.println(hm.containsKey("India")); // Ture
+        System.out.println(hm.containsKey("US")); // False
     }
 }
